@@ -1,5 +1,7 @@
 package io.github.chaoswaffle.createmath;
 
+import io.github.chaoswaffle.createmath.item.ModItemGroups;
+import io.github.chaoswaffle.createmath.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +14,8 @@ public class CreateMath implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Initializing " + NAME);
+		ModItemGroups.registerItemGroups();
+		ModItems.registerItems();
 	}
 }

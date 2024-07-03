@@ -3,6 +3,7 @@
   "item.createmath.zero": "Zero",
   "item.createmath.one": "One",
   "item.createmath.infinity": "Infinity",
+  "item.createmath.indeterminate_form": "Indeterminate Form",
   "item.createmath.add": "Add",
   "item.createmath.subtract": "Subtract",
   "item.createmath.multiply": "Multiply",

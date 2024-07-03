@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_multiply": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createmath:multiply"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createmath:zero_by_mult_commutative"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zero": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createmath:zero"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_multiply",
+      "has_zero",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createmath:zero_by_mult_commutative"
+    ]
+  },
+  "sends_telemetry_event": false
+}

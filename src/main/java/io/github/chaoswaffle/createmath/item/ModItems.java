@@ -2,6 +2,9 @@ package io.github.chaoswaffle.createmath.item;
 
 import io.github.chaoswaffle.createmath.CreateMath;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,6 +15,11 @@ public class ModItems {
     public static final Item ZERO = registerItem("zero");
     public static final Item ONE = registerItem("one");
     public static final Item INFINITY = registerItem("infinity");
+    public static final Item INDETERMINATE_FORM = registerItem("indeterminate_form",
+            new Item(new FabricItemSettings().food(new FoodComponent.Builder()
+                    .hunger(7)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 13), 1)
+                    .build())));
     public static final Item ADD = registerItem("add");
     public static final Item SUBTRACT = registerItem("subtract");
     public static final Item MULTIPLY = registerItem("multiply");

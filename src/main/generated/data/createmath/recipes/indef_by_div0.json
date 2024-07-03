@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "createmath:zero"
+    },
+    "/": {
+      "item": "createmath:divide"
+    }
+  },
+  "pattern": [
+    "#/#"
+  ],
+  "result": {
+    "item": "createmath:indeterminate_form"
+  },
+  "show_notification": true
+}

@@ -15,6 +15,7 @@ public class CreateMath implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing " + NAME);
+
 		ModItemGroups.registerItemGroups();
 		ModItems.registerItems();
 	}

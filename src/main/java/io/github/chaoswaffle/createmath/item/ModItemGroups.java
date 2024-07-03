@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ZERO);
                         entries.add(ModItems.ONE);
                         entries.add(ModItems.INFINITY);
+                        entries.add(ModItems.INDETERMINATE_FORM);
                         entries.add(ModItems.ADD);
                         entries.add(ModItems.SUBTRACT);
                         entries.add(ModItems.MULTIPLY);

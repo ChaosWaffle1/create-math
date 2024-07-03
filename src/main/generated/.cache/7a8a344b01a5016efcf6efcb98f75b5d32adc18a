@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-03T15:31:23.4876371	Create: Math/Model Definitions
+// 1.20.1	2024-07-03T17:47:26.2599638	Create: Math/Model Definitions
 6ef31a07411eaaef9035bbec6945a25590301583 assets\createmath\models\item\divide.json
 45587df556cccda8a3b98125cef0b7c168baa72a assets\createmath\models\item\one.json
 641abc942884c475cd564e3208b6d0c719985513 assets\createmath\models\item\multiply.json
@@ -7,3 +7,4 @@
 31376f22244773fc4f04f73ba93d72607738861c assets\createmath\models\item\subtract.json
 1d8d897ce2ca490402011431b7d70498134f94d5 assets\createmath\models\item\add.json
 192fadfad9e160d1e464688909d86be9c5ea0ac9 assets\createmath\models\item\infinity.json
+5b5e6862d15f8a76615f835c72906b1b908d5824 assets\createmath\models\item\indeterminate_form.json

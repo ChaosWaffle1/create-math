@@ -1,5 +1,6 @@
 package io.github.chaoswaffle.createmath;
 
+import io.github.chaoswaffle.createmath.block.ModBlocks;
 import io.github.chaoswaffle.createmath.item.ModItemGroups;
 import io.github.chaoswaffle.createmath.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,5 +19,6 @@ public class CreateMath implements ModInitializer {
 
 		ModItemGroups.registerItemGroups();
 		ModItems.registerItems();
+		ModBlocks.registerBlocks();
 	}
 }

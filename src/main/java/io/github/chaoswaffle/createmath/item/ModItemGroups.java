@@ -1,6 +1,7 @@
 package io.github.chaoswaffle.createmath.item;
 
 import io.github.chaoswaffle.createmath.CreateMath;
+import io.github.chaoswaffle.createmath.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -25,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SUBTRACT);
                         entries.add(ModItems.MULTIPLY);
                         entries.add(ModItems.DIVIDE);
+                        entries.add(ModBlocks.AXIOMITE_ORE);
                         entries.add(ModItems.AXIOMITE);
                     })
                     .build());

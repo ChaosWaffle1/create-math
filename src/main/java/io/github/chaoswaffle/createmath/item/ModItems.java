@@ -30,7 +30,6 @@ public class ModItems {
     public static final Item DIVIDE = registerItem("divide");
 
     public static final Item AXIOMITE = registerItem("axiomite");
-
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(CreateMath.ID, name), item);
     }

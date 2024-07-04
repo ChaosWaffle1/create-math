@@ -1,6 +1,7 @@
 package io.github.chaoswaffle.createmath.datagen;
 
 import com.ibm.icu.text.Normalizer2;
+import io.github.chaoswaffle.createmath.block.ModBlocks;
 import io.github.chaoswaffle.createmath.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -15,7 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AXIOMITE_ORE);
     }
 
     @Override

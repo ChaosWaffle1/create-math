@@ -11,19 +11,25 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+    //TODO: Axiomite
+    //TODO: Tagging numbers & implement in recipes
+    //TODO: Integcreate
+    //TODO: Arbitrary number operation
     public static final Item NUMBER = registerItem("number");
     public static final Item ZERO = registerItem("zero");
     public static final Item ONE = registerItem("one");
     public static final Item INFINITY = registerItem("infinity");
+    //TODO: new status effect for indef form
     public static final Item INDETERMINATE_FORM = registerItem("indeterminate_form",
             new Item(new FabricItemSettings().food(new FoodComponent.Builder()
-                    .hunger(7)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 13), 1)
                     .build())));
+
     public static final Item ADD = registerItem("add");
     public static final Item SUBTRACT = registerItem("subtract");
     public static final Item MULTIPLY = registerItem("multiply");
     public static final Item DIVIDE = registerItem("divide");
+
+    public static final Item AXIOMITE = registerItem("axiomite");
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(CreateMath.ID, name), item);

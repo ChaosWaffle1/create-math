@@ -8,6 +8,7 @@
   "item.createmath.subtract": "Subtract",
   "item.createmath.multiply": "Multiply",
   "item.createmath.divide": "Divide",
+  "item.createmath.axiomite": "Axiomite",
 
 
   "itemgroup.createmath": "Create: Math"

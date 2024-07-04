@@ -25,6 +25,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SUBTRACT);
                         entries.add(ModItems.MULTIPLY);
                         entries.add(ModItems.DIVIDE);
+                        entries.add(ModItems.AXIOMITE);
                     })
                     .build());
     public static void registerItemGroups(){

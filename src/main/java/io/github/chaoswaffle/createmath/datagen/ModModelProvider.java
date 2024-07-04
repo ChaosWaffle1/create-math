@@ -29,5 +29,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SUBTRACT, Models.GENERATED);
         itemModelGenerator.register(ModItems.MULTIPLY, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIVIDE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AXIOMITE, Models.GENERATED);
     }
 }

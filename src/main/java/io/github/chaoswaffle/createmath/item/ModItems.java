@@ -11,7 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    //TODO: Axiomite
+    //TODO: Datagen loottable
     //TODO: Tagging numbers & implement in recipes
     //TODO: Integcreate
     //TODO: Arbitrary number operation

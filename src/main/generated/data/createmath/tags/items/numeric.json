@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "createmath:number",
+    "createmath:zero",
+    "createmath:one"
+  ]
+}

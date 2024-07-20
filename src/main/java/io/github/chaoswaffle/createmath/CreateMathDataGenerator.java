@@ -2,6 +2,7 @@ package io.github.chaoswaffle.createmath;
 
 import io.github.chaoswaffle.createmath.datagen.models.ModModelProvider;
 import io.github.chaoswaffle.createmath.datagen.recipes.ModRecipeProvider;
+import io.github.chaoswaffle.createmath.datagen.tags.ModItemTagProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -12,5 +13,6 @@ public class CreateMathDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
 	}
 }

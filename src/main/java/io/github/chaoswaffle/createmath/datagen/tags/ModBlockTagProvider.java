@@ -1,4 +1,4 @@
-package io.github.chaoswaffle.createmath.datagen;
+package io.github.chaoswaffle.createmath.datagen.tags;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;

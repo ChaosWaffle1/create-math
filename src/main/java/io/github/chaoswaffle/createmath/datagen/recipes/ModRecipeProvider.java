@@ -21,6 +21,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
+//        ModShapelessRecipes.generateShapelessRecipes(exporter);
         generateShapelessRecipes(exporter);
         generateShapedRecipes(exporter);
     }
@@ -32,7 +33,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(CreateMath.ID, "infinity_by_infinity"));
     }
 
-    private void generateShapedRecipes(Consumer<RecipeJsonProvider> exporter){
+    private static void generateShapedRecipes(Consumer<RecipeJsonProvider> exporter){
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO)
                 .pattern("N*0")
                 .input('N', ModItems.NUMBER)

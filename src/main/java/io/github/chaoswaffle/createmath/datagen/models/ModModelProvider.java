@@ -1,4 +1,4 @@
-package io.github.chaoswaffle.createmath.datagen;
+package io.github.chaoswaffle.createmath.datagen.models;
 
 import com.ibm.icu.text.Normalizer2;
 import io.github.chaoswaffle.createmath.block.ModBlocks;
@@ -31,5 +31,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MULTIPLY, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIVIDE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AXIOMITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NULL_SET, Models.GENERATED);
     }
 }

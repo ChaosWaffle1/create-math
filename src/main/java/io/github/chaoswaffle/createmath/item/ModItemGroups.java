@@ -28,6 +28,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DIVIDE);
                         entries.add(ModBlocks.AXIOMITE_ORE);
                         entries.add(ModItems.AXIOMITE);
+                        entries.add(ModItems.NULL_SET);
                     })
                     .build());
     public static void registerItemGroups(){

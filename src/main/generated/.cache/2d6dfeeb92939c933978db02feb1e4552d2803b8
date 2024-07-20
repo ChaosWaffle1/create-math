@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-20T16:55:32.2620339	Create: Math/Recipes
+// 1.20.1	2024-07-20T17:00:25.6581131	Create: Math/Recipes
 c54bb97148747d1c3b26f38aac2d5f9009316b4b data\createmath\advancements\recipes\misc\zero_by_mult.json
 69dd95164624fc9822f06be7fba26c1fdf84a7cf data\createmath\recipes\indef_by_inf_to_zero.json
 972e1deb5b6ce7330f3dc884745d91cd4390db49 data\createmath\advancements\recipes\misc\zero_by_mult_commutative.json
@@ -9,8 +9,8 @@ ef0a46a3120dc3dae4f37db99f97317823619ec5 data\createmath\advancements\recipes\mi
 ecbde4a88b0a66774431b1fe8528834056c771bd data\createmath\advancements\recipes\misc\indef_by_zero_to_zero.json
 e1b96d4ef35542c06a04d51a5ec7e7b2309561d6 data\createmath\recipes\zero_by_div.json
 a7420906fb450ec99c323125e2e81c6803150d51 data\createmath\recipes\indef_by_zero_to_zero.json
-c1e69602f5e1a2efa532c60e14c3c58776448673 data\createmath\advancements\recipes\misc\indef_by_zero_times_inf_commutative.json
 e56dbbec7cf20a4067731c0d3d66761f3ef07a51 data\createmath\recipes\indef_by_one_to_inf.json
+c1e69602f5e1a2efa532c60e14c3c58776448673 data\createmath\advancements\recipes\misc\indef_by_zero_times_inf_commutative.json
 82a1500608e14d287cb05e5e416b69f639c2892e data\createmath\recipes\indef_by_div_inf.json
 51a590a116fb6f3446ac1470a584e40bec93fb23 data\createmath\recipes\indef_by_div0.json
 36985fe61b656ae46f7583f8e25b2f27d36ba18c data\createmath\recipes\infinity_by_div0.json
@@ -20,7 +20,7 @@ e56dbbec7cf20a4067731c0d3d66761f3ef07a51 data\createmath\recipes\indef_by_one_to
 301b6ef328bdeab909a1c721be47b405d36f196c data\createmath\recipes\indef_by_inf_minus_inf.json
 a154a3df6c901b81ac0e55f8600eb6034a09f166 data\createmath\advancements\recipes\misc\indef_by_zero_times_inf.json
 92c65e196049f09d1311e20b6a5fb26b669b05f2 data\createmath\advancements\recipes\misc\infinity_by_div0.json
-ed3bde6b9c6307afe4bde086cc2c9aecef98f07f data\createmath\recipes\indef_by_zero_times_inf_commutative.json
+51fe5736ced378ba5e21f6a4e0326801d0c93fb3 data\createmath\recipes\indef_by_zero_times_inf_commutative.json
 5793e3e6f84684dbd4976e219b4b3c133f9bed55 data\createmath\advancements\recipes\misc\zero_by_div.json
 5d8b4464180f77bf5bb4c563c3b2106d735fe8f9 data\createmath\advancements\recipes\misc\infinity_by_infinity.json
 d8bd715051a51c5b96d292b62b6f98769fd0227e data\createmath\recipes\indef_by_zero_times_inf.json

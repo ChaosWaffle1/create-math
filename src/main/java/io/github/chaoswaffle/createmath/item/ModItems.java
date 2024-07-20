@@ -1,7 +1,9 @@
 package io.github.chaoswaffle.createmath.item;
 
 import io.github.chaoswaffle.createmath.CreateMath;
+import io.github.chaoswaffle.createmath.item.custom.IndeterminateFormItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -9,7 +11,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    //TODO: Datagen loottable & tags -> recipes
     //TODO: Integcreate
     //TODO: Arbitrary number operation
     public static final Item NUMBER = registerBasicItem("number");
@@ -18,8 +19,7 @@ public class ModItems {
     public static final Item INFINITY = registerBasicItem("infinity");
     //TODO: new status effect for indef form
     public static final Item INDETERMINATE_FORM = registerItem("indeterminate_form",
-            new Item(new FabricItemSettings().food(new FoodComponent.Builder()
-                    .build())));
+            new IndeterminateFormItem(new FabricItemSettings().food(new FoodComponent.Builder().alwaysEdible().build())));
 
     public static final Item ADD = registerBasicItem("add");
     public static final Item SUBTRACT = registerBasicItem("subtract");

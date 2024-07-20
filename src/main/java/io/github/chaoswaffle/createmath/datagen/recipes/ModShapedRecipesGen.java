@@ -85,9 +85,9 @@ public class ModShapedRecipesGen {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("i*0")
-                .input('i', ModItems.ZERO)
+                .input('0', ModItems.ZERO)
                 .input('*', ModItems.MULTIPLY)
-                .input('0', ModItems.INFINITY)
+                .input('i', ModItems.INFINITY)
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_zero_times_inf_commutative"));

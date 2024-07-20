@@ -1,8 +1,11 @@
 package io.github.chaoswaffle.createmath.item;
 
 import io.github.chaoswaffle.createmath.CreateMath;
+import io.github.chaoswaffle.createmath.effect.IndeterminateFormEffect;
+import io.github.chaoswaffle.createmath.effect.ModEffects;
 import io.github.chaoswaffle.createmath.item.custom.IndeterminateFormItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
@@ -17,9 +20,11 @@ public class ModItems {
     public static final Item ZERO = registerBasicItem("zero");
     public static final Item ONE = registerBasicItem("one");
     public static final Item INFINITY = registerBasicItem("infinity");
-    //TODO: new status effect for indef form
     public static final Item INDETERMINATE_FORM = registerItem("indeterminate_form",
-            new IndeterminateFormItem(new FabricItemSettings().food(new FoodComponent.Builder().alwaysEdible().build())));
+            new IndeterminateFormItem(new FabricItemSettings().food(new FoodComponent.Builder()
+                    .alwaysEdible()
+                    .statusEffect(new StatusEffectInstance(ModEffects.INDETERMINATE_FORM_EFFECT, 8*20), 1)
+                    .build())));
 
     public static final Item ADD = registerBasicItem("add");
     public static final Item SUBTRACT = registerBasicItem("subtract");

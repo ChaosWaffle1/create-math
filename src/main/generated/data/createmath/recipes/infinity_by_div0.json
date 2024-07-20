@@ -9,7 +9,7 @@
       "item": "createmath:zero"
     },
     "N": {
-      "item": "createmath:number"
+      "tag": "createmath:numeric"
     }
   },
   "pattern": [

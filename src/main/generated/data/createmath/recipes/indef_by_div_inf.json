@@ -5,18 +5,15 @@
     "/": {
       "item": "createmath:divide"
     },
-    "0": {
-      "item": "createmath:zero"
-    },
-    "N": {
-      "tag": "createmath:numeric"
+    "i": {
+      "item": "createmath:infinity"
     }
   },
   "pattern": [
-    "0/N"
+    "i/i"
   ],
   "result": {
-    "item": "createmath:zero"
+    "item": "createmath:indeterminate_form"
   },
   "show_notification": true
 }

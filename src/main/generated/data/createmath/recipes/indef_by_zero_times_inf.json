@@ -2,21 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "/": {
-      "item": "createmath:divide"
+    "*": {
+      "item": "createmath:multiply"
     },
     "0": {
       "item": "createmath:zero"
     },
-    "N": {
-      "tag": "createmath:numeric"
+    "i": {
+      "item": "createmath:infinity"
     }
   },
   "pattern": [
-    "0/N"
+    "0*i"
   ],
   "result": {
-    "item": "createmath:zero"
+    "item": "createmath:indeterminate_form"
   },
   "show_notification": true
 }

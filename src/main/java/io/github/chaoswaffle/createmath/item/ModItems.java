@@ -25,6 +25,7 @@ public class ModItems {
     public static final Item SUBTRACT = registerBasicItem("subtract");
     public static final Item MULTIPLY = registerBasicItem("multiply");
     public static final Item DIVIDE = registerBasicItem("divide");
+    public static final Item EXPONENT = registerBasicItem("exponent");
 
     public static final Item NULL_SET = registerBasicItem("null_set");
 

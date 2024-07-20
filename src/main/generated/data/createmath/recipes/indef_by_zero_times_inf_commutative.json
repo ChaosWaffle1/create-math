@@ -6,17 +6,17 @@
       "item": "createmath:multiply"
     },
     "0": {
-      "item": "createmath:zero"
+      "item": "createmath:infinity"
     },
-    "N": {
-      "tag": "createmath:numeric"
+    "i": {
+      "item": "createmath:zero"
     }
   },
   "pattern": [
-    "0*N"
+    "i*0"
   ],
   "result": {
-    "item": "createmath:zero"
+    "item": "createmath:indeterminate_form"
   },
   "show_notification": true
 }

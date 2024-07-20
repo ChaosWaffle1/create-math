@@ -2,15 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "/": {
-      "item": "createmath:divide"
+    "1": {
+      "item": "createmath:one"
     },
-    "0": {
-      "item": "createmath:zero"
+    "^": {
+      "item": "createmath:exponent"
+    },
+    "i": {
+      "item": "createmath:infinity"
     }
   },
   "pattern": [
-    "0/0"
+    "1^i"
   ],
   "result": {
     "item": "createmath:indeterminate_form"

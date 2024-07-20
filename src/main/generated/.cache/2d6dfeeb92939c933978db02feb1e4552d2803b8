@@ -1,6 +1,7 @@
-// 1.20.1	2024-07-20T16:00:12.4715645	Create: Math/Recipes
+// 1.20.1	2024-07-20T16:17:12.7561492	Create: Math/Recipes
 c54bb97148747d1c3b26f38aac2d5f9009316b4b data\createmath\advancements\recipes\misc\zero_by_mult.json
 972e1deb5b6ce7330f3dc884745d91cd4390db49 data\createmath\advancements\recipes\misc\zero_by_mult_commutative.json
+11593d16e2a1377a5130841e0cfac3d0ca556bb9 data\createmath\recipes\zero_from_null_set.json
 69f54fdb86b19dded2706e5707b22e3d66a01174 data\createmath\advancements\recipes\misc\indef_by_div0.json
 766bb6ad7820fe3adef875ee4b34d31cf343e4da data\createmath\recipes\infinity_by_infinity.json
 b7942f7cc05a6083e7861b6e4518f3b6370ff3e0 data\createmath\recipes\zero_by_div.json
@@ -9,5 +10,6 @@ b7942f7cc05a6083e7861b6e4518f3b6370ff3e0 data\createmath\recipes\zero_by_div.jso
 5d8b4464180f77bf5bb4c563c3b2106d735fe8f9 data\createmath\advancements\recipes\misc\infinity_by_infinity.json
 196ef801af658e82d125344bdff25339bf022290 data\createmath\recipes\indef_by_div0.json
 3e7ae01a22348bfc2ba59d13fe237c0dbc49784b data\createmath\recipes\infinity_by_div0.json
+2c833fa8b6372da934903773ab2904af8dd8e6cc data\createmath\advancements\recipes\misc\zero_from_null_set.json
 6b17a121cadc0fa0531f778d063d52651f5d24a9 data\createmath\recipes\zero_by_mult_commutative.json
 fdb68b92831abf32c2ec543f40d0cb3dffcfd0ae data\createmath\recipes\zero_by_mult.json

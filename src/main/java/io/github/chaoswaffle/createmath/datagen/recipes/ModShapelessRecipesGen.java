@@ -11,11 +11,15 @@ import java.util.function.Consumer;
 
 import static net.minecraft.data.server.recipe.RecipeProvider.*;
 
-public class ModShapelessRecipes {
+public class ModShapelessRecipesGen {
     public static void generateShapelessRecipes(Consumer<RecipeJsonProvider> exporter){
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INFINITY, 2)
                 .input(ModItems.INFINITY)
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .offerTo(exporter, new Identifier(CreateMath.ID, "infinity_by_infinity"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO, 1)
+                .input(ModItems.NULL_SET)
+                .criterion(hasItem(ModItems.NULL_SET), conditionsFromItem(ModItems.NULL_SET))
+                .offerTo(exporter, new Identifier(CreateMath.ID, "zero_from_null_set"));
     }
 }

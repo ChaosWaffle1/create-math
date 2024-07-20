@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup CREATE_MATH_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(CreateMath.ID, "createmath"),
+            new Identifier(CreateMath.MOD_ID, "createmath"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemgroup.createmath"))
                     .icon(() -> new ItemStack(ModItems.ADD))
@@ -29,6 +29,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.AXIOMITE_ORE);
                         entries.add(ModItems.AXIOMITE);
                         entries.add(ModItems.NULL_SET);
+                        entries.add(ModItems.VARIABLE);
                     })
                     .build());
     public static void registerItemGroups(){

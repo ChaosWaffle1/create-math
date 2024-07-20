@@ -1,7 +1,7 @@
-// 1.20.1	2024-07-20T16:17:12.7561492	Create: Math/Recipes
+// 1.20.1	2024-07-20T16:47:21.4592017	Create: Math/Recipes
 c54bb97148747d1c3b26f38aac2d5f9009316b4b data\createmath\advancements\recipes\misc\zero_by_mult.json
 972e1deb5b6ce7330f3dc884745d91cd4390db49 data\createmath\advancements\recipes\misc\zero_by_mult_commutative.json
-11593d16e2a1377a5130841e0cfac3d0ca556bb9 data\createmath\recipes\zero_from_null_set.json
+9bbbd00229460b47b8b0c4618abce79c97c2d391 data\createmath\recipes\zero_from_null_set.json
 69f54fdb86b19dded2706e5707b22e3d66a01174 data\createmath\advancements\recipes\misc\indef_by_div0.json
 766bb6ad7820fe3adef875ee4b34d31cf343e4da data\createmath\recipes\infinity_by_infinity.json
 b7942f7cc05a6083e7861b6e4518f3b6370ff3e0 data\createmath\recipes\zero_by_div.json

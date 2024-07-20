@@ -9,8 +9,9 @@
   "item.createmath.multiply": "Multiply",
   "item.createmath.divide": "Divide",
   "item.createmath.axiomite": "Axiomite",
-
   "block.createmath.axiomite_ore": "Axiomite Ore",
+  "item.createmath.null_set": "Null Set",
+  "item.createmath.variable": "Variable",
 
 
   "itemgroup.createmath": "Create: Math"

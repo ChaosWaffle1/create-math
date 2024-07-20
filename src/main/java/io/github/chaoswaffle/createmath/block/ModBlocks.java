@@ -19,10 +19,10 @@ public class ModBlocks {
                     UniformIntProvider.create(5, 10))); // XP Count
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(CreateMath.ID, name), block);
+        return Registry.register(Registries.BLOCK, new Identifier(CreateMath.MOD_ID, name), block);
     }
     private static Item registerBlockItem(String name, Block block){
-        return Registry.register(Registries.ITEM, new Identifier(CreateMath.ID, name),
+        return Registry.register(Registries.ITEM, new Identifier(CreateMath.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
     public static void registerBlocks(){

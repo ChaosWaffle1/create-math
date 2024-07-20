@@ -16,10 +16,10 @@ public class ModShapelessRecipesGen {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INFINITY, 2)
                 .input(ModItems.INFINITY)
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
-                .offerTo(exporter, new Identifier(CreateMath.ID, "infinity_by_infinity"));
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "infinity_by_infinity"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO, 1)
                 .input(ModItems.NULL_SET)
                 .criterion(hasItem(ModItems.NULL_SET), conditionsFromItem(ModItems.NULL_SET))
-                .offerTo(exporter, new Identifier(CreateMath.ID, "zero_from_null_set"));
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "zero_from_null_set"));
     }
 }

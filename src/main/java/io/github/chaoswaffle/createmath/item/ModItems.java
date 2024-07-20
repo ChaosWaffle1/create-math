@@ -9,8 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    //TODO: Datagen loottable
-    //TODO: Tagging numbers & implement in recipes
+    //TODO: Datagen loottable & tags -> recipes
     //TODO: Integcreate
     //TODO: Arbitrary number operation
     public static final Item NUMBER = registerBasicItem("number");
@@ -30,8 +29,9 @@ public class ModItems {
     public static final Item NULL_SET = registerBasicItem("null_set");
 
     public static final Item AXIOMITE = registerBasicItem("axiomite");
+    public static final Item VARIABLE = registerBasicItem("variable");
     private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, new Identifier(CreateMath.ID, name), item);
+        return Registry.register(Registries.ITEM, new Identifier(CreateMath.MOD_ID, name), item);
     }
     private static Item registerBasicItem(String name){
         return registerItem(name, new Item(new FabricItemSettings()));

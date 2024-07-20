@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class CreateMath implements ModInitializer {
-	public static final String ID = "createmath";
+	public static final String MOD_ID = "createmath";
 	public static final String NAME = "Create: Math";
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 

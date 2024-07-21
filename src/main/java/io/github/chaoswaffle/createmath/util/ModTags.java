@@ -17,6 +17,7 @@ public class ModTags {
     }
     public static class Items {
         public static final TagKey<Item> NUMERIC = createTag("numeric");
+        public static final TagKey<Item> NON_ZERO_NUMERIC = createTag("non_zero_numeric");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(RegistryKeys.ITEM, new Identifier(CreateMath.MOD_ID, name));

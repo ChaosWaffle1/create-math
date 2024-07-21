@@ -35,7 +35,7 @@ public class ModShapedRecipesGen {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO)
                 .pattern("0/N")
-                .input('N', ModTags.Items.NUMERIC)
+                .input('N', ModTags.Items.NON_ZERO_NUMERIC)
                 .input('/', ModItems.DIVIDE)
                 .input('0', ModItems.ZERO)
                 .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
@@ -44,7 +44,7 @@ public class ModShapedRecipesGen {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INFINITY)
                 .pattern("N/0")
-                .input('N', ModTags.Items.NUMERIC)
+                .input('N', ModTags.Items.NON_ZERO_NUMERIC)
                 .input('/', ModItems.DIVIDE)
                 .input('0', ModItems.ZERO)
                 .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))

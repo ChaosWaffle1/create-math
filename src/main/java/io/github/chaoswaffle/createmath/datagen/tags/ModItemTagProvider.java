@@ -19,5 +19,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NUMBER)
                 .add(ModItems.ZERO)
                 .add(ModItems.ONE);
+        getOrCreateTagBuilder(ModTags.Items.NON_ZERO_NUMERIC)
+                .add(ModItems.ONE)
+                .add(ModItems.NUMBER);
     }
 }

@@ -5,6 +5,7 @@ import io.github.chaoswaffle.createmath.item.ModItems;
 import io.github.chaoswaffle.createmath.util.ModTags;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 

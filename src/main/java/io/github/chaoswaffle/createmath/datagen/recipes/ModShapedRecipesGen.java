@@ -15,42 +15,11 @@ import static net.minecraft.data.server.recipe.RecipeProvider.*;
 
 public class ModShapedRecipesGen {
     public static void generateShapedRecipes(Consumer<RecipeJsonProvider> exporter){
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO)
-                .pattern("N*0")
-                .input('N', ModTags.Items.NUMERIC)
-                .input('*', ModItems.MULTIPLY)
-                .input('0', ModItems.ZERO)
-                .criterion(hasItem(ModItems.MULTIPLY), conditionsFromItem(ModItems.MULTIPLY))
-                .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
-                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "zero_by_mult"));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO)
-                .pattern("0*N")
-                .input('N', ModTags.Items.NUMERIC)
-                .input('*', ModItems.MULTIPLY)
-                .input('0', ModItems.ZERO)
-                .criterion(hasItem(ModItems.MULTIPLY), conditionsFromItem(ModItems.MULTIPLY))
-                .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
-                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "zero_by_mult_commutative"));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO)
-                .pattern("0/N")
-                .input('N', ModTags.Items.NON_ZERO_NUMERIC)
-                .input('/', ModItems.DIVIDE)
-                .input('0', ModItems.ZERO)
-                .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
-                .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
-                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "zero_by_div"));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INFINITY)
-                .pattern("N/0")
-                .input('N', ModTags.Items.NON_ZERO_NUMERIC)
-                .input('/', ModItems.DIVIDE)
-                .input('0', ModItems.ZERO)
-                .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
-                .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
-                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "infinity_by_div0"));
-
+        registerIndeterminateForms(exporter);
+        registerZeroArithmeticProperties(exporter);
+    }
+    private static void registerIndeterminateForms(Consumer<RecipeJsonProvider> exporter){
+        // 0/0 = indef
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("0/0")
                 .input('0', ModItems.ZERO)
@@ -58,7 +27,7 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_div0"));
-
+        // inf/inf = indef
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("i/i")
                 .input('i', ModItems.INFINITY)
@@ -66,7 +35,7 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_div_inf"));
-
+        // inf-inf = indef
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("i-i")
                 .input('i', ModItems.INFINITY)
@@ -74,7 +43,7 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_inf_minus_inf"));
-
+        // 0*inf = indef
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("0*i")
                 .input('0', ModItems.ZERO)
@@ -83,7 +52,7 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_zero_times_inf"));
-
+        // inf*0 = indef
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("i*0")
                 .input('0', ModItems.ZERO)
@@ -92,7 +61,7 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_zero_times_inf_commutative"));
-
+        // 0^0 = indef
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("0^0")
                 .input('0', ModItems.ZERO)
@@ -100,7 +69,7 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_zero_to_zero"));
-
+        // inf^0 = indef
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("i^0")
                 .input('i', ModItems.INFINITY)
@@ -109,7 +78,7 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_inf_to_zero"));
-
+        // 1^inf = indef
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDETERMINATE_FORM)
                 .pattern("1^i")
                 .input('i', ModItems.INFINITY)
@@ -118,6 +87,43 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "indef_by_one_to_inf"));
-
+    }
+    private static void registerZeroArithmeticProperties(Consumer<RecipeJsonProvider> exporter){
+        // N*0 = 0
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO)
+                .pattern("N*0")
+                .input('N', ModTags.Items.NUMERIC)
+                .input('*', ModItems.MULTIPLY)
+                .input('0', ModItems.ZERO)
+                .criterion(hasItem(ModItems.MULTIPLY), conditionsFromItem(ModItems.MULTIPLY))
+                .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "zero_by_mult"));
+        // 0*N = 0
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO)
+                .pattern("0*N")
+                .input('N', ModTags.Items.NUMERIC)
+                .input('*', ModItems.MULTIPLY)
+                .input('0', ModItems.ZERO)
+                .criterion(hasItem(ModItems.MULTIPLY), conditionsFromItem(ModItems.MULTIPLY))
+                .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "zero_by_mult_commutative"));
+        // 0/N = 0
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZERO)
+                .pattern("0/N")
+                .input('N', ModTags.Items.NON_ZERO_NUMERIC)
+                .input('/', ModItems.DIVIDE)
+                .input('0', ModItems.ZERO)
+                .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
+                .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "zero_by_div"));
+        // N/0 = inf
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INFINITY)
+                .pattern("N/0")
+                .input('N', ModTags.Items.NON_ZERO_NUMERIC)
+                .input('/', ModItems.DIVIDE)
+                .input('0', ModItems.ZERO)
+                .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
+                .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "infinity_by_div0"));
     }
 }

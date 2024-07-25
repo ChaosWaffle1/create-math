@@ -9,6 +9,7 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
@@ -43,15 +44,18 @@ public class IndeterminateFormEffect extends StatusEffect {
             entity.setPitch((float) (r.nextDouble()*180%180 - 90));
         }
 
-        SoundEvent sound = SOUNDS.get(Random.create().nextBetween(0,SOUNDS.size()-1));
-        entity.getWorld().playSound(null,
-                entity.getX(),
-                entity.getY(),
-                entity.getZ(),
-                sound,
-                SoundCategory.MASTER,
-                1f,
-                Random.create().nextFloat()*2);
+        Optional<RegistryEntry.Reference<SoundEvent>> soundOptional = Registries.SOUND_EVENT.getRandom(r);
+        if(soundOptional.isPresent()){
+            SoundEvent sound = soundOptional.get().value();
+            entity.getWorld().playSound(null,
+                    entity.getX(),
+                    entity.getY(),
+                    entity.getZ(),
+                    sound,
+                    SoundCategory.MASTER,
+                    1f,
+                    Random.create().nextFloat()*2);
+        }
     }
 
     @Override
@@ -70,8 +74,9 @@ public class IndeterminateFormEffect extends StatusEffect {
                 SoundCategory.MASTER,
                 2f,
                 1f);
-//        Registries.STATUS_EFFECT.getEntrySet().forEach(e -> {
-//            entity.addStatusEffect(new StatusEffectInstance(e.getValue(), 5*10));
-//        });
+        Registries.STATUS_EFFECT.getEntrySet().forEach(e -> {
+            if (e.getValue() == ModEffects.INDETERMINATE_FORM_EFFECT) return;
+            entity.addStatusEffect(new StatusEffectInstance(e.getValue(), 5*20, 4));
+        });
     }
 }

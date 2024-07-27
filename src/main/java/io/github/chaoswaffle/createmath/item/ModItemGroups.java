@@ -26,9 +26,10 @@ public class ModItemGroups {
                         entries.add(ModItems.SUBTRACT);
                         entries.add(ModItems.MULTIPLY);
                         entries.add(ModItems.DIVIDE);
-//                        entries.add(ModBlocks.AXIOMITE_ORE);
+                        entries.add(ModBlocks.AXIOMITE_ORE);
                         entries.add(ModItems.AXIOMITE);
                         entries.add(ModItems.NULL_SET);
+                        entries.add(ModItems.SET_OF_NULL_SET);
                         entries.add(ModItems.VARIABLE);
                     })
                     .build());

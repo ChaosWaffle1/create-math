@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-27T13:42:12.4802011	Create: Math/Recipes
+// 1.20.1	2024-07-27T14:18:33.3284029	Create: Math/Recipes
 69dd95164624fc9822f06be7fba26c1fdf84a7cf data\createmath\recipes\indef_by_inf_to_zero.json
 c54bb97148747d1c3b26f38aac2d5f9009316b4b data\createmath\advancements\recipes\misc\zero_by_mult.json
 972e1deb5b6ce7330f3dc884745d91cd4390db49 data\createmath\advancements\recipes\misc\zero_by_mult_commutative.json
@@ -8,8 +8,8 @@ ef0a46a3120dc3dae4f37db99f97317823619ec5 data\createmath\advancements\recipes\mi
 ecbde4a88b0a66774431b1fe8528834056c771bd data\createmath\advancements\recipes\misc\indef_by_zero_to_zero.json
 4f1e730afc99da8a6360eb09dce6f75c0ca18cf2 data\createmath\recipes\zero_by_div.json
 a7420906fb450ec99c323125e2e81c6803150d51 data\createmath\recipes\indef_by_zero_to_zero.json
-e56dbbec7cf20a4067731c0d3d66761f3ef07a51 data\createmath\recipes\indef_by_one_to_inf.json
 c1e69602f5e1a2efa532c60e14c3c58776448673 data\createmath\advancements\recipes\misc\indef_by_zero_times_inf_commutative.json
+e56dbbec7cf20a4067731c0d3d66761f3ef07a51 data\createmath\recipes\indef_by_one_to_inf.json
 82a1500608e14d287cb05e5e416b69f639c2892e data\createmath\recipes\indef_by_div_inf.json
 51a590a116fb6f3446ac1470a584e40bec93fb23 data\createmath\recipes\indef_by_div0.json
 ea2de58780f44e2bd70952519ae4d8847fed2647 data\createmath\recipes\infinity_by_div0.json

@@ -30,6 +30,13 @@ public class ModItemGroups {
                         entries.add(ModItems.AXIOMITE);
                         entries.add(ModItems.NULL_SET);
                         entries.add(ModItems.SET_OF_NULL_SET);
+                        entries.add(ModItems.FOR_ALL);
+                        entries.add(ModItems.THERE_EXISTS);
+                        entries.add(ModItems.GENERAL_SET);
+                        entries.add(ModItems.OPEN_PARENTHESES);
+                        entries.add(ModItems.CLOSE_PARENTHESES);
+                        entries.add(ModItems.IS_AN_ELEMENT_OF);
+                        entries.add(ModItems.IS_NOT_AN_ELEMENT_OF);
                         entries.add(ModItems.VARIABLE);
                     })
                     .build());

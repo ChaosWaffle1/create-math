@@ -33,6 +33,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AXIOMITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.NULL_SET, Models.GENERATED);
         itemModelGenerator.register(ModItems.SET_OF_NULL_SET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FOR_ALL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THERE_EXISTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GENERAL_SET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OPEN_PARENTHESES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLOSE_PARENTHESES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IS_AN_ELEMENT_OF, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IS_NOT_AN_ELEMENT_OF, Models.GENERATED);
         itemModelGenerator.register(ModItems.VARIABLE, Models.GENERATED);
     }
 }

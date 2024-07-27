@@ -34,9 +34,17 @@ public class ModItems {
 
     public static final Item NULL_SET = registerBasicItem("null_set");
     public static final Item SET_OF_NULL_SET = registerBasicItem("set_of_null_set");
+    public static final Item FOR_ALL = registerBasicItem("for_all");
+    public static final Item THERE_EXISTS = registerBasicItem("there_exists");
+    public static final Item GENERAL_SET = registerBasicItem("general_set");
+    public static final Item OPEN_PARENTHESES = registerBasicItem("open_parentheses");
+    public static final Item CLOSE_PARENTHESES = registerBasicItem("close_parentheses");
+    public static final Item IS_AN_ELEMENT_OF = registerBasicItem("is_an_element_of");
+    public static final Item IS_NOT_AN_ELEMENT_OF = registerBasicItem("is_not_an_element_of.png");
+
+    public static final Item VARIABLE = registerBasicItem("variable");
 
     public static final Item AXIOMITE = registerBasicItem("axiomite");
-    public static final Item VARIABLE = registerBasicItem("variable");
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(CreateMath.MOD_ID, name), item);
     }

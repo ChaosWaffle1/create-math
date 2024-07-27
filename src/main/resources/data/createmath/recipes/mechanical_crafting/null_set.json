@@ -1,0 +1,34 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "ESAx(xnS)"
+  ],
+  "key":{
+    "E": {
+      "item": "createmath:there_exists"
+    },
+    "S": {
+      "item": "createmath:general_set"
+    },
+    "A": {
+      "item": "createmath:for_all"
+    },
+    "x": {
+      "item": "createmath:variable"
+    },
+    "(": {
+      "item": "createmath:open_parentheses"
+    },
+    ")": {
+      "item": "createmath:close_parentheses"
+    },
+    "n": {
+      "item": "createmath:is_not_an_element_of"
+    }
+  },
+  "result": {
+    "item": "createmath:null_set",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

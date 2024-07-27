@@ -14,9 +14,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
-    public static final Block AXIOMITE_ORE = registerBlock("axiomite_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f),
-                    UniformIntProvider.create(5, 10))); // XP Count
+//    public static final Block AXIOMITE_ORE = registerBlock("axiomite_ore",
+//            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f),
+//                    UniformIntProvider.create(5, 10))); // XP Count
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(CreateMath.MOD_ID, name), block);

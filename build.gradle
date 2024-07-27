@@ -1,6 +1,7 @@
 plugins {
-	id 'fabric-loom' version '1.7-SNAPSHOT'
-	id 'maven-publish'
+	id "fabric-loom" version "1.5.+"
+	id "io.github.p03w.machete" version "1.+" // automatic jar compressing on build
+	id "maven-publish"
 }
 
 version = project.mod_version
@@ -59,6 +60,14 @@ dependencies {
 }
 
 processResources {
+	Map<String, String> properties = Map.of(
+			"version", version,
+			"fabric_loader_version", loader_version,
+			"fabric_api_version", fabric_version,
+			"create_version", create_version,
+			"minecraft_version", minecraft_version
+	)
+
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
@@ -101,5 +110,18 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+	}
+}
+loom {
+	runs {
+		datagen {
+			client()
+
+			name "Data Generation"
+
+			vmArg "-Dfabric-api.datagen.modid=createmath"
+			vmArg "-Dporting_lib.datagen.existing_resources=${project.file("src/main/resources")}"
+		}
+
 	}
 }

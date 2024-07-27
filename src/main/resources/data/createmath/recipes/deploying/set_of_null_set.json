@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createmath:null_set"
+    },
+    {
+      "item": "createmath:null_set"
+    }
+  ],
+  "results":[
+    {
+      "item": "createmath:set_of_null_set"
+    }
+  ]
+}

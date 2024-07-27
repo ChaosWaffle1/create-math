@@ -1,10 +1,8 @@
-// 1.20.1	2024-07-20T20:55:13.0194918	Create: Math/Model Definitions
-19bfc4d1dd4e79bf75cf89926db3f77ad9309c1d assets\createmath\models\item\axiomite_ore.json
+// 1.20.1	2024-07-27T13:35:05.6987837	Create: Math/Model Definitions
 6ef31a07411eaaef9035bbec6945a25590301583 assets\createmath\models\item\divide.json
 641abc942884c475cd564e3208b6d0c719985513 assets\createmath\models\item\multiply.json
 192fadfad9e160d1e464688909d86be9c5ea0ac9 assets\createmath\models\item\infinity.json
-cc25ebb8da6cdbfcf393e693b4b037086a047316 assets\createmath\models\block\axiomite_ore.json
-d5a340382d1f6d254e556b4753798e3ad2307b36 assets\createmath\blockstates\axiomite_ore.json
+b71db99a0a0074fd3e48d68dc77ed134087e49af assets\createmath\models\item\set_of_null_set.json
 d0fd9313e8125aebfef663a03c27f1e63b269c70 assets\createmath\models\item\variable.json
 45587df556cccda8a3b98125cef0b7c168baa72a assets\createmath\models\item\one.json
 7ac80df46f31840f0c11384dcb07bde931c31384 assets\createmath\models\item\axiomite.json

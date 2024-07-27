@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createmath:set_of_null_set"
+    }
+  ],
+  "result": {
+    "item": "createmath:one"
+  }
+}

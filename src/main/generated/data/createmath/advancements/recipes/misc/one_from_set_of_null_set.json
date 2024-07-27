@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_infinity": {
+    "has_null_set": {
       "conditions": {
         "items": [
           {
             "items": [
-              "createmath:infinity"
+              "createmath:null_set"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "createmath:infinity_by_infinity"
+        "recipe": "createmath:one_from_set_of_null_set"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_infinity",
+      "has_null_set",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "createmath:infinity_by_infinity"
+      "createmath:one_from_set_of_null_set"
     ]
   },
   "sends_telemetry_event": false

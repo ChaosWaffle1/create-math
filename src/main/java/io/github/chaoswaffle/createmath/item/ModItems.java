@@ -33,6 +33,7 @@ public class ModItems {
     public static final Item EXPONENT = registerBasicItem("exponent");
 
     public static final Item NULL_SET = registerBasicItem("null_set");
+    public static final Item SET_OF_NULL_SET = registerBasicItem("set_of_null_set");
 
     public static final Item AXIOMITE = registerBasicItem("axiomite");
     public static final Item VARIABLE = registerBasicItem("variable");

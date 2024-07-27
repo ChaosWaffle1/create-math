@@ -16,7 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AXIOMITE_ORE);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AXIOMITE_ORE);
     }
 
     @Override
@@ -32,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIVIDE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AXIOMITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.NULL_SET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SET_OF_NULL_SET, Models.GENERATED);
         itemModelGenerator.register(ModItems.VARIABLE, Models.GENERATED);
     }
 }

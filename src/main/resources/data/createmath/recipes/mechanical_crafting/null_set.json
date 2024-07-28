@@ -8,13 +8,13 @@
       "item": "createmath:there_exists"
     },
     "S": {
-      "item": "createmath:general_set"
+      "item": "createmath:set_a"
     },
     "A": {
       "item": "createmath:for_all"
     },
     "x": {
-      "item": "createmath:variable"
+      "item": "createmath:variable_x"
     },
     "(": {
       "item": "createmath:open_parentheses"

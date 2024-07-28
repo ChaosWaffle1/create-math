@@ -1,11 +1,10 @@
-package io.github.chaoswaffle.createmath.datagen.recipes;
+package io.github.chaoswaffle.createmath.data.recipes;
 
 import io.github.chaoswaffle.createmath.CreateMath;
 import io.github.chaoswaffle.createmath.item.ModItems;
 import io.github.chaoswaffle.createmath.util.ModTags;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 

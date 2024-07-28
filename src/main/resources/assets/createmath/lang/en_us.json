@@ -12,7 +12,14 @@
   "block.createmath.axiomite_ore": "Axiomite Ore",
   "item.createmath.null_set": "Null Set",
   "item.createmath.set_of_null_set": "Set of Null Set",
-  "item.createmath.variable": "Variable",
+  "item.createmath.for_all": "For All",
+  "item.createmath.there_exists": "There Exists",
+  "item.createmath.set_a": "Set A",
+  "item.createmath.open_parentheses": "Open Parentheses",
+  "item.createmath.close_parentheses": "Close Parentheses",
+  "item.createmath.is_an_element_of": "Is an Element of",
+  "item.createmath.is_not_an_element_of": "Is not an Element of",
+  "item.createmath.variable_x": "Variable X",
 
 
   "itemgroup.createmath": "Create: Math"

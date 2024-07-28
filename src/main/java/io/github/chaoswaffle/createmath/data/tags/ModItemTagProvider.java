@@ -1,4 +1,4 @@
-package io.github.chaoswaffle.createmath.datagen.tags;
+package io.github.chaoswaffle.createmath.data.tags;
 
 import io.github.chaoswaffle.createmath.item.ModItems;
 import io.github.chaoswaffle.createmath.util.ModTags;

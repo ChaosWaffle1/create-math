@@ -1,6 +1,5 @@
-package io.github.chaoswaffle.createmath.datagen;
+package io.github.chaoswaffle.createmath.data.loottables;
 
-import io.github.chaoswaffle.createmath.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 
@@ -11,5 +10,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+
     }
 }

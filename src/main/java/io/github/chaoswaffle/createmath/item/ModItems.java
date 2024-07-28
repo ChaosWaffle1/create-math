@@ -1,12 +1,10 @@
 package io.github.chaoswaffle.createmath.item;
 
 import io.github.chaoswaffle.createmath.CreateMath;
-import io.github.chaoswaffle.createmath.effect.IndeterminateFormEffect;
 import io.github.chaoswaffle.createmath.effect.ModEffects;
 import io.github.chaoswaffle.createmath.item.custom.IndeterminateFormItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -32,17 +30,21 @@ public class ModItems {
     public static final Item DIVIDE = registerBasicItem("divide");
     public static final Item EXPONENT = registerBasicItem("exponent");
 
+    public static final Item IDENTITY_MATRIX = registerBasicItem("identity_matrix");
+    public static final Item SCALE_MATRIX = registerBasicItem("scale_matrix");
+
     public static final Item NULL_SET = registerBasicItem("null_set");
     public static final Item SET_OF_NULL_SET = registerBasicItem("set_of_null_set");
     public static final Item FOR_ALL = registerBasicItem("for_all");
     public static final Item THERE_EXISTS = registerBasicItem("there_exists");
-    public static final Item GENERAL_SET = registerBasicItem("general_set");
     public static final Item OPEN_PARENTHESES = registerBasicItem("open_parentheses");
     public static final Item CLOSE_PARENTHESES = registerBasicItem("close_parentheses");
     public static final Item IS_AN_ELEMENT_OF = registerBasicItem("is_an_element_of");
-    public static final Item IS_NOT_AN_ELEMENT_OF = registerBasicItem("is_not_an_element_of.png");
+    public static final Item IS_NOT_AN_ELEMENT_OF = registerBasicItem("is_not_an_element_of");
 
-    public static final Item VARIABLE = registerBasicItem("variable");
+    public static final Item VARIABLE_X = registerBasicItem("variable_x");
+    public static final Item SET_A = registerBasicItem("set_a");
+
 
     public static final Item AXIOMITE = registerBasicItem("axiomite");
     private static Item registerItem(String name, Item item){

@@ -1,8 +1,8 @@
 package io.github.chaoswaffle.createmath;
 
-import io.github.chaoswaffle.createmath.datagen.models.ModModelProvider;
-import io.github.chaoswaffle.createmath.datagen.recipes.ModRecipeProvider;
-import io.github.chaoswaffle.createmath.datagen.tags.ModItemTagProvider;
+import io.github.chaoswaffle.createmath.data.models.ModModelProvider;
+import io.github.chaoswaffle.createmath.data.recipes.ModRecipeProvider;
+import io.github.chaoswaffle.createmath.data.tags.ModItemTagProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 

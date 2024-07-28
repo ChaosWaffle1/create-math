@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "createmath:item/general_set"
+    "layer0": "createmath:item/variable_x"
   }
 }

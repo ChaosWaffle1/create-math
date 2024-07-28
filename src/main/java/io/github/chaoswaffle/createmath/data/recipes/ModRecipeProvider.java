@@ -1,4 +1,4 @@
-package io.github.chaoswaffle.createmath.datagen.recipes;
+package io.github.chaoswaffle.createmath.data.recipes;
 
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

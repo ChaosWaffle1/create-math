@@ -1,4 +1,4 @@
-package io.github.chaoswaffle.createmath.datagen.recipes;
+package io.github.chaoswaffle.createmath.data.recipes;
 
 import io.github.chaoswaffle.createmath.CreateMath;
 import io.github.chaoswaffle.createmath.item.ModItems;

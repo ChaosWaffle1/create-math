@@ -12,7 +12,7 @@ import java.util.function.Consumer;
 import static net.minecraft.data.server.recipe.RecipeProvider.*;
 
 public class ModShapelessRecipesGen {
-    public static void generateShapelessRecipes(Consumer<RecipeJsonProvider> exporter){
+    public static void generate(Consumer<RecipeJsonProvider> exporter){
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INFINITY, 2)
                 .input(ModItems.INFINITY)
                 .criterion(hasItem(ModItems.INFINITY), conditionsFromItem(ModItems.INFINITY))

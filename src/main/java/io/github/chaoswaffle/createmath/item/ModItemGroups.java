@@ -17,29 +17,48 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.createmath"))
                     .icon(() -> new ItemStack(ModItems.ADD))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.NUMBER);
-                        entries.add(ModItems.ZERO);
+//                        entries.add(ModItems.NUMBER);
+
                         entries.add(ModItems.ONE);
+                        entries.add(ModItems.TWO);
+                        entries.add(ModItems.THREE);
+                        entries.add(ModItems.FOUR);
+                        entries.add(ModItems.FIVE);
+                        entries.add(ModItems.SIX);
+                        entries.add(ModItems.SEVEN);
+                        entries.add(ModItems.EIGHT);
+                        entries.add(ModItems.NINE);
+                        entries.add(ModItems.ZERO);
                         entries.add(ModItems.INFINITY);
                         entries.add(ModItems.INDETERMINATE_FORM);
+
                         entries.add(ModItems.ADD);
                         entries.add(ModItems.SUBTRACT);
                         entries.add(ModItems.MULTIPLY);
                         entries.add(ModItems.DIVIDE);
+
                         entries.add(ModItems.IDENTITY_MATRIX);
                         entries.add(ModItems.SCALE_MATRIX);
+
                         entries.add(ModBlocks.AXIOMITE_ORE);
                         entries.add(ModItems.AXIOMITE);
-                        entries.add(ModItems.NULL_SET);
-                        entries.add(ModItems.SET_OF_NULL_SET);
+
                         entries.add(ModItems.FOR_ALL);
                         entries.add(ModItems.THERE_EXISTS);
-                        entries.add(ModItems.SET_A);
                         entries.add(ModItems.OPEN_PARENTHESES);
                         entries.add(ModItems.CLOSE_PARENTHESES);
                         entries.add(ModItems.IS_AN_ELEMENT_OF);
                         entries.add(ModItems.IS_NOT_AN_ELEMENT_OF);
+
+                        entries.add(ModItems.SET_A);
                         entries.add(ModItems.VARIABLE_X);
+
+                        entries.add(ModItems.NULL_SET);
+                        entries.add(ModItems.SET_OF_NULL_SET);
+                        entries.add(ModItems.NATURALS);
+                        entries.add(ModItems.INTEGERS);
+                        entries.add(ModItems.RATIONALS);
+                        entries.add(ModItems.REALS);
                     })
                     .build());
     public static void registerItemGroups(){

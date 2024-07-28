@@ -1,26 +1,42 @@
 {
-  "item.createmath.number": "Number",
-  "item.createmath.zero": "Zero",
   "item.createmath.one": "One",
+  "item.createmath.two": "Two",
+  "item.createmath.three": "Three",
+  "item.createmath.four": "Four",
+  "item.createmath.five": "Five",
+  "item.createmath.six": "Six",
+  "item.createmath.seven": "Seven",
+  "item.createmath.eight": "Eight",
+  "item.createmath.nine": "Nine",
+  "item.createmath.zero": "Zero",
+
   "item.createmath.infinity": "Infinity",
   "item.createmath.indeterminate_form": "Indeterminate Form",
+
   "item.createmath.add": "Add",
   "item.createmath.subtract": "Subtract",
   "item.createmath.multiply": "Multiply",
   "item.createmath.divide": "Divide",
+
   "item.createmath.axiomite": "Axiomite",
   "block.createmath.axiomite_ore": "Axiomite Ore",
-  "item.createmath.null_set": "Null Set",
-  "item.createmath.set_of_null_set": "Set of Null Set",
+
   "item.createmath.for_all": "For All",
   "item.createmath.there_exists": "There Exists",
-  "item.createmath.set_a": "Set A",
   "item.createmath.open_parentheses": "Open Parentheses",
   "item.createmath.close_parentheses": "Close Parentheses",
   "item.createmath.is_an_element_of": "Is an Element of",
   "item.createmath.is_not_an_element_of": "Is not an Element of",
+
+  "item.createmath.set_a": "Set A",
   "item.createmath.variable_x": "Variable X",
 
+  "item.createmath.null_set": "Null Set",
+  "item.createmath.set_of_null_set": "Set of Null Set",
+  "item.createmath.naturals": "Set of Natural Numbers",
+  "item.createmath.integers": "Set of Integers",
+  "item.createmath.rationals": "Set of Rational Numbers",
+  "item.createmath.reals": "Set of Reals Numbers",
 
   "itemgroup.createmath": "Create: Math"
 }

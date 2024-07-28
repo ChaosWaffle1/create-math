@@ -1,8 +1,15 @@
 {
   "replace": false,
   "values": [
-    "createmath:number",
     "createmath:zero",
-    "createmath:one"
+    "createmath:one",
+    "createmath:two",
+    "createmath:three",
+    "createmath:four",
+    "createmath:five",
+    "createmath:six",
+    "createmath:seven",
+    "createmath:eight",
+    "createmath:nine"
   ]
 }

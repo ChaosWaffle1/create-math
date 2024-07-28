@@ -14,9 +14,18 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     //TODO: Integcreate
     //TODO: Arbitrary number operation
-    public static final Item NUMBER = registerBasicItem("number");
-    public static final Item ZERO = registerBasicItem("zero");
+//    public static final Item NUMBER = registerBasicItem("number");
     public static final Item ONE = registerBasicItem("one");
+    public static final Item TWO = registerBasicItem("two");
+    public static final Item THREE = registerBasicItem("three");
+    public static final Item FOUR = registerBasicItem("four");
+    public static final Item FIVE = registerBasicItem("five");
+    public static final Item SIX = registerBasicItem("six");
+    public static final Item SEVEN = registerBasicItem("seven");
+    public static final Item EIGHT = registerBasicItem("eight");
+    public static final Item NINE = registerBasicItem("nine");
+    public static final Item ZERO = registerBasicItem("zero");
+
     public static final Item INFINITY = registerBasicItem("infinity");
     public static final Item INDETERMINATE_FORM = registerItem("indeterminate_form",
             new IndeterminateFormItem(new FabricItemSettings().food(new FoodComponent.Builder()
@@ -33,8 +42,6 @@ public class ModItems {
     public static final Item IDENTITY_MATRIX = registerBasicItem("identity_matrix");
     public static final Item SCALE_MATRIX = registerBasicItem("scale_matrix");
 
-    public static final Item NULL_SET = registerBasicItem("null_set");
-    public static final Item SET_OF_NULL_SET = registerBasicItem("set_of_null_set");
     public static final Item FOR_ALL = registerBasicItem("for_all");
     public static final Item THERE_EXISTS = registerBasicItem("there_exists");
     public static final Item OPEN_PARENTHESES = registerBasicItem("open_parentheses");
@@ -45,6 +52,12 @@ public class ModItems {
     public static final Item VARIABLE_X = registerBasicItem("variable_x");
     public static final Item SET_A = registerBasicItem("set_a");
 
+    public static final Item NULL_SET = registerBasicItem("null_set");
+    public static final Item SET_OF_NULL_SET = registerBasicItem("set_of_null_set");
+    public static final Item NATURALS = registerBasicItem("naturals");
+    public static final Item INTEGERS = registerBasicItem("integers");
+    public static final Item RATIONALS = registerBasicItem("rationals");
+    public static final Item REALS = registerBasicItem("reals");
 
     public static final Item AXIOMITE = registerBasicItem("axiomite");
     private static Item registerItem(String name, Item item){

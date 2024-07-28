@@ -14,7 +14,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        ModShapelessRecipesGen.generateShapelessRecipes(exporter);
-        ModShapedRecipesGen.generateShapedRecipes(exporter);
+        ModShapelessRecipesGen.generate(exporter);
+        ModShapedRecipesGen.generate(exporter);
     }
 }

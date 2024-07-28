@@ -21,9 +21,17 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.NUMBER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ZERO, Models.GENERATED);
         itemModelGenerator.register(ModItems.ONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TWO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THREE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FOUR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FIVE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SIX, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SEVEN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EIGHT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ZERO, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.INFINITY, Models.GENERATED);
         itemModelGenerator.register(ModItems.INDETERMINATE_FORM, Models.GENERATED);
 
@@ -36,15 +44,23 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIVIDE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.AXIOMITE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.NULL_SET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SET_OF_NULL_SET, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.FOR_ALL, Models.GENERATED);
         itemModelGenerator.register(ModItems.THERE_EXISTS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SET_A, Models.GENERATED);
         itemModelGenerator.register(ModItems.OPEN_PARENTHESES, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLOSE_PARENTHESES, Models.GENERATED);
         itemModelGenerator.register(ModItems.IS_AN_ELEMENT_OF, Models.GENERATED);
         itemModelGenerator.register(ModItems.IS_NOT_AN_ELEMENT_OF, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SET_A, Models.GENERATED);
         itemModelGenerator.register(ModItems.VARIABLE_X, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.NULL_SET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SET_OF_NULL_SET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NATURALS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.INTEGERS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RATIONALS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REALS, Models.GENERATED);
+
     }
 }

@@ -13,7 +13,7 @@ import java.util.function.Consumer;
 import static net.minecraft.data.server.recipe.RecipeProvider.*;
 
 public class ModShapedRecipesGen {
-    public static void generateShapedRecipes(Consumer<RecipeJsonProvider> exporter){
+    public static void generate(Consumer<RecipeJsonProvider> exporter){
         registerIndeterminateForms(exporter);
         registerZeroArithmeticProperties(exporter);
     }

@@ -25,5 +25,13 @@ public class ModShapelessRecipesGen {
                 .input(ModItems.SET_OF_NULL_SET)
                 .criterion(hasItem(ModItems.NULL_SET), conditionsFromItem(ModItems.NULL_SET))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "one_from_set_of_null_set"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OPEN_PARENTHESES, 1)
+                .input(ModItems.CLOSE_PARENTHESES)
+                .criterion(hasItem(ModItems.OPEN_PARENTHESES), conditionsFromItem(ModItems.OPEN_PARENTHESES))
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "open_parentheses_symmetry"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CLOSE_PARENTHESES, 1)
+                .input(ModItems.OPEN_PARENTHESES)
+                .criterion(hasItem(ModItems.CLOSE_PARENTHESES), conditionsFromItem(ModItems.CLOSE_PARENTHESES))
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "close_parentheses_symmetry"));
     }
 }

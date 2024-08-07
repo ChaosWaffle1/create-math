@@ -5,6 +5,7 @@ import io.github.chaoswaffle.createmath.item.ModItems;
 import io.github.chaoswaffle.createmath.util.ModTags;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -16,6 +17,7 @@ public class ModShapedRecipesGen {
     public static void generate(Consumer<RecipeJsonProvider> exporter){
         registerIndeterminateForms(exporter);
         registerZeroArithmeticProperties(exporter);
+        registerSetTheorySymbols(exporter);
     }
     private static void registerIndeterminateForms(Consumer<RecipeJsonProvider> exporter){
         // 0/0 = indef
@@ -124,5 +126,29 @@ public class ModShapedRecipesGen {
                 .criterion(hasItem(ModItems.ZERO), conditionsFromItem(ModItems.ZERO))
                 .criterion(hasItem(ModItems.DIVIDE), conditionsFromItem(ModItems.DIVIDE))
                 .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "infinity_by_div0"));
+    }
+
+    private static void registerSetTheorySymbols(Consumer<RecipeJsonProvider> exporter){
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OPEN_PARENTHESES)
+                .pattern(" X")
+                .pattern("X ")
+                .pattern(" X")
+                .input('X' ,ModItems.BIT_OF_AXIOMITE)
+                .criterion(hasItem(ModItems.BIT_OF_AXIOMITE), conditionsFromItem(ModItems.BIT_OF_AXIOMITE))
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "open_parentheses_from_craft"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CLOSE_PARENTHESES)
+                .pattern("X ")
+                .pattern(" X")
+                .pattern("X ")
+                .input('X' ,ModItems.BIT_OF_AXIOMITE)
+                .criterion(hasItem(ModItems.BIT_OF_AXIOMITE), conditionsFromItem(ModItems.BIT_OF_AXIOMITE))
+                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "close_parentheses_from_craft"));
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IS_AN_ELEMENT_OF)
+//                .pattern("CXC")
+//                .input('C', Items.COBWEB)
+//                .input('X', ModItems.BIT_OF_AXIOMITE)
+//                .criterion(hasItem(ModItems.BIT_OF_AXIOMITE), conditionsFromItem(ModItems.BIT_OF_AXIOMITE))
+//                .criterion(hasItem(Items.COBWEB), conditionsFromItem(Items.COBWEB))
+//                .offerTo(exporter, new Identifier(CreateMath.MOD_ID, "is_an_element_of_from_craft"));
     }
 }

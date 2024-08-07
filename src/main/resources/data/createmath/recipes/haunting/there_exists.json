@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "createmath:for_all"
+    }
+  ],
+  "results":[
+    {
+      "item": "createmath:there_exists"
+    }
+  ]
+}

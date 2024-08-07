@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createmath:bit_of_axiomite"
+    },
+    {
+      "item": "minecraft:cobweb"
+    },
+    {
+      "item": "minecraft:cobweb"
+    },
+    {
+      "item": "minecraft:cobweb"
+    },
+    {
+      "item": "minecraft:cobweb"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 81000,
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "createmath:is_an_element_of"
+    }
+  ]
+}

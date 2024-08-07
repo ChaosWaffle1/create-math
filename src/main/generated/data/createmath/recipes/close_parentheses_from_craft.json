@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "createmath:bit_of_axiomite"
+    }
+  },
+  "pattern": [
+    "X ",
+    " X",
+    "X "
+  ],
+  "result": {
+    "item": "createmath:close_parentheses"
+  },
+  "show_notification": true
+}

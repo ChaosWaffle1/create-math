@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "createmath:is_an_element_of"
+    }
+  ],
+  "results":[
+    {
+      "item": "createmath:is_not_an_element_of"
+    }
+  ]
+}

@@ -63,6 +63,7 @@ public class ModItems {
     public static final Item REALS = registerBasicItem("reals");
 
     public static final Item AXIOMITE = registerBasicItem("axiomite");
+    public static final Item BIT_OF_AXIOMITE = registerBasicItem("bit_of_axiomite");
     private static Item registerItem(String name, Item item){
         Item registeredItem = Registry.register(Registries.ITEM, new Identifier(CreateMath.MOD_ID, name), item);
         ALL_ITEMS.add(registeredItem);

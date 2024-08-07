@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createmath:close_parentheses"
+    }
+  ],
+  "result": {
+    "item": "createmath:open_parentheses"
+  }
+}

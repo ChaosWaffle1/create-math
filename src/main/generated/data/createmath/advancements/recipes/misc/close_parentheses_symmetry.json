@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_close_parentheses": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createmath:close_parentheses"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createmath:close_parentheses_symmetry"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_close_parentheses",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createmath:close_parentheses_symmetry"
+    ]
+  },
+  "sends_telemetry_event": false
+}

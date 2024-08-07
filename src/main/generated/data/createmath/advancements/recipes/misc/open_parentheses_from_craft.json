@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bit_of_axiomite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createmath:bit_of_axiomite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createmath:open_parentheses_from_craft"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bit_of_axiomite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createmath:open_parentheses_from_craft"
+    ]
+  },
+  "sends_telemetry_event": false
+}

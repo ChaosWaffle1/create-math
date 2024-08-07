@@ -11,9 +11,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
+import java.util.ArrayList;
+
 public class ModItems {
     //TODO: Integcreate
     //TODO: Arbitrary number operation
+    public static final ArrayList<Item> ALL_ITEMS = new ArrayList<>();
 //    public static final Item NUMBER = registerBasicItem("number");
     public static final Item ONE = registerBasicItem("one");
     public static final Item TWO = registerBasicItem("two");
@@ -61,7 +64,9 @@ public class ModItems {
 
     public static final Item AXIOMITE = registerBasicItem("axiomite");
     private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, new Identifier(CreateMath.MOD_ID, name), item);
+        Item registeredItem = Registry.register(Registries.ITEM, new Identifier(CreateMath.MOD_ID, name), item);
+        ALL_ITEMS.add(registeredItem);
+        return registeredItem;
     }
     private static Item registerBasicItem(String name){
         return registerItem(name, new Item(new FabricItemSettings()));

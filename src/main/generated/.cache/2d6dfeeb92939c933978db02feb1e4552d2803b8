@@ -1,9 +1,9 @@
-// 1.20.1	2024-07-28T11:08:02.4034754	Create: Math/Recipes
+// 1.20.1	2024-07-28T11:47:54.7445856	Create: Math/Recipes
 69dd95164624fc9822f06be7fba26c1fdf84a7cf data\createmath\recipes\indef_by_inf_to_zero.json
 c54bb97148747d1c3b26f38aac2d5f9009316b4b data\createmath\advancements\recipes\misc\zero_by_mult.json
 972e1deb5b6ce7330f3dc884745d91cd4390db49 data\createmath\advancements\recipes\misc\zero_by_mult_commutative.json
-69f54fdb86b19dded2706e5707b22e3d66a01174 data\createmath\advancements\recipes\misc\indef_by_div0.json
 9bbbd00229460b47b8b0c4618abce79c97c2d391 data\createmath\recipes\zero_from_null_set.json
+69f54fdb86b19dded2706e5707b22e3d66a01174 data\createmath\advancements\recipes\misc\indef_by_div0.json
 ef0a46a3120dc3dae4f37db99f97317823619ec5 data\createmath\advancements\recipes\misc\indef_by_div_inf.json
 ecbde4a88b0a66774431b1fe8528834056c771bd data\createmath\advancements\recipes\misc\indef_by_zero_to_zero.json
 4f1e730afc99da8a6360eb09dce6f75c0ca18cf2 data\createmath\recipes\zero_by_div.json

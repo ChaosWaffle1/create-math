@@ -1,31 +1,32 @@
-// 1.20.1	2024-07-28T11:08:02.4014573	Create: Math/Model Definitions
+// 1.20.1	2024-07-28T11:47:54.741663	Create: Math/Model Definitions
 6197713b62fe653ffcea8a0ead663d6260ff4341 assets\createmath\models\item\there_exists.json
 19bfc4d1dd4e79bf75cf89926db3f77ad9309c1d assets\createmath\models\item\axiomite_ore.json
-6ef31a07411eaaef9035bbec6945a25590301583 assets\createmath\models\item\divide.json
 054755026e062b72080ce8c3a4f1884fb407400c assets\createmath\models\item\six.json
+6ef31a07411eaaef9035bbec6945a25590301583 assets\createmath\models\item\divide.json
 ea4150386f614147445413d817cf3e015a575bb7 assets\createmath\models\item\nine.json
 8653d89fef6fb31ab66f3bdeab39d069b90ec534 assets\createmath\models\item\close_parentheses.json
 8673c6eb3d47bd55b1ddf231c403a27123d191e8 assets\createmath\models\item\scale_matrix.json
-31641316cf4bf89ae17c4fe0d4e4ffd6ea353647 assets\createmath\models\item\integers.json
 3b7bb3c4b4da24317e1c96f0b19f34c2f249692a assets\createmath\models\item\rationals.json
+31641316cf4bf89ae17c4fe0d4e4ffd6ea353647 assets\createmath\models\item\integers.json
 d5a340382d1f6d254e556b4753798e3ad2307b36 assets\createmath\blockstates\axiomite_ore.json
 97f5297e55518c6fc013c42e1b2fc3eb7d37ff4b assets\createmath\models\item\identity_matrix.json
 fb5a974ff7474df06c750849101b6d1b59a85f14 assets\createmath\models\item\five.json
 e0d4f5a2b39913ec3c2850072246bdfab6b5da9e assets\createmath\models\item\set_a.json
 93f820e3af3b343a4009a3cb36cf150832c6b460 assets\createmath\models\item\eight.json
 55045c215685c5d4ba77a7842e51d10a6b845868 assets\createmath\models\item\zero.json
+14a1c08351e4d1344275813ab0ef9ad7e704a77b assets\createmath\models\item\exponent.json
 1d8d897ce2ca490402011431b7d70498134f94d5 assets\createmath\models\item\add.json
 332b2d115442904955e5add1d4113469700a3205 assets\createmath\models\item\three.json
 c9fd39426b13f69346f04b339d62ed05cfd1bf97 assets\createmath\models\item\two.json
-c8090a4d8911f10b2f7f2adf204c7e85450dbfb3 assets\createmath\models\item\open_parentheses.json
 d21c60afccff467563cc6e898dc831bd488edaba assets\createmath\models\item\seven.json
+c8090a4d8911f10b2f7f2adf204c7e85450dbfb3 assets\createmath\models\item\open_parentheses.json
 5b5e6862d15f8a76615f835c72906b1b908d5824 assets\createmath\models\item\indeterminate_form.json
 641abc942884c475cd564e3208b6d0c719985513 assets\createmath\models\item\multiply.json
 5e2d143da9f971f7bcc6201133ce2eb98bbcf331 assets\createmath\models\item\for_all.json
 543ebe9e52abc79fd5dd876aac5827c209e4301e assets\createmath\models\item\is_not_an_element_of.json
 dff3f969b0066edc999390559c399d49ff0140f9 assets\createmath\models\item\reals.json
-b71db99a0a0074fd3e48d68dc77ed134087e49af assets\createmath\models\item\set_of_null_set.json
 192fadfad9e160d1e464688909d86be9c5ea0ac9 assets\createmath\models\item\infinity.json
+b71db99a0a0074fd3e48d68dc77ed134087e49af assets\createmath\models\item\set_of_null_set.json
 cc25ebb8da6cdbfcf393e693b4b037086a047316 assets\createmath\models\block\axiomite_ore.json
 ec88616a2f94c25ec0c121f5b0cdd6b3458485eb assets\createmath\models\item\four.json
 45587df556cccda8a3b98125cef0b7c168baa72a assets\createmath\models\item\one.json

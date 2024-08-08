@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "bit_of_axiomite"
+      "item": "createmath:bit_of_axiomite"
     },
     {
       "item": "minecraft:sugar"
@@ -11,10 +11,16 @@
       "item": "minecraft:gunpowder"
     },
     {
-      "item": "minecraft:glowstone"
+      "item": "minecraft:glowstone_dust"
     },
     {
       "item": "minecraft:redstone"
+    },
+    {
+      "item": "create:cinder_flour"
+    },
+    {
+      "item": "powdered_obsidian"
     }
   ],
   "results": [

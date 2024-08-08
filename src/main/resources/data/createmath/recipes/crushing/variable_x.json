@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "createmath:set_a"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "item": "createmath:variable_x",
+      "count": 4
+    }
+  ]
+}

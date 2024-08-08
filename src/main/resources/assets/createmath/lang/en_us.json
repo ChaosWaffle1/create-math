@@ -17,9 +17,11 @@
   "item.createmath.subtract": "Subtract",
   "item.createmath.multiply": "Multiply",
   "item.createmath.divide": "Divide",
+  "item.createmath.exponent": "Exponent",
 
-  "item.createmath.axiomite": "Axiomite",
-  "block.createmath.axiomite_ore": "Axiomite Ore",
+  "item.createmath.identity_matrix": "Identity Matrix",
+  "item.createmath.scale_matrix": "Scaling Matrix",
+
 
   "item.createmath.for_all": "For All",
   "item.createmath.there_exists": "There Exists",
@@ -37,6 +39,11 @@
   "item.createmath.integers": "Set of Integers",
   "item.createmath.rationals": "Set of Rational Numbers",
   "item.createmath.reals": "Set of Reals Numbers",
+
+
+  "item.createmath.axiomite": "Axiomite",
+  "block.createmath.axiomite_ore": "Axiomite Ore",
+  "item.createmath.bit_of_axiomite": "Bit of Axiomite",
 
   "itemgroup.createmath": "Create: Math"
 }

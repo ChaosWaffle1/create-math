@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "createmath:one"
+    }
+  ],
+  "results": [
+    {
+      "item": "createmath:axiomite"
+    }
+  ]
+}
